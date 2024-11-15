@@ -1,0 +1,136 @@
+/* General layout and styling */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #17439b;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  .restaurantTable {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .restaurantTable:hover {
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Add button */
+  .addButton {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #5a67d8;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .addButton:hover {
+    background-color: #4c51bf;
+    transform: translateY(-2px);
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 16px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #5a67d8;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  td {
+    color: #555;
+    font-size: 14px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9fafb;
+  }
+  
+  tr:hover {
+    background-color: #f1f5f9;
+    cursor: pointer;
+  }
+  
+  /* Action buttons */
+  .actionButtons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .editButton, .deleteButton {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .editButton {
+    background-color: #ecc94b;
+  }
+  
+  .editButton:hover {
+    background-color: #d69e2e;
+    transform: translateY(-2px);
+  }
+  
+  .deleteButton {
+    background-color: #e53e3e;
+  }
+  
+  .deleteButton:hover {
+    background-color: #c53030;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .restaurantTable {
+      width: 95%;
+      padding: 20px;
+    }
+  
+    th, td {
+      padding: 12px;
+    }
+  
+    .addButton {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .editButton, .deleteButton {
+      padding: 6px 12px;
+      font-size: 13px;
+    }
+  }
